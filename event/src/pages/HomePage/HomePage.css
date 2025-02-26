@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rampart+One&family=Spicy+Rice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
 
-body,html {
-    background: url('/assets/background.jpg') no-repeat center center/cover;
+body {
   margin: 0;
   padding: 0;
   font-family: 'Raleway', sans-serif;
-  background-color: #f8f8f8;
 }
 
 /* Hero Section */
@@ -17,49 +16,72 @@ body,html {
   padding: 50px;
   min-height: 100vh;
   background: url('/assets/kl.jpg') no-repeat center center/cover;
-  color: #01062a;
+  color:#01062a;
   text-align: left;
 }
 
 .home-text {
   max-width: 50%;
 }
-
-#tit1, #tit2 {
-  font-family: "Rampart One", serif;
-  font-weight: 400;
-}
-
-#tit1 {
-  font-size: 5rem;
-}
-
-#tit2 {
+.rampart-one-regular {
+    font-family: "Rampart One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  #tit2{
+    font-family: "Rampart One", serif;
+    font-weight: 400;
+    font-style: normal;
   font-size: 4rem;
+  font-weight: bold;
+}
+  #tit1{
+    font-family: "Spicy Rice", serif;
+  font-weight: 400;
+  
+  font-style: normal;
+  font-size: 5rem;
+  font-weight: bold;
 }
 
 .home-text p {
   font-size: 1.2rem;
   margin-top: 10px;
 }
-
 .explore-btn {
-  margin-top: 20px;
-  padding: 15px 30px;
-  font-size: larger;
-  border: none;
-  border-radius: 25px;
-  background: linear-gradient(135deg, #3d0367, #720ad2, #950de5);
-  color: white;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 4px 10px rgb(28, 0, 48), inset 0 2px 4px rgba(46, 1, 86, 0.763);
-}
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size:larger;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #3d0367, #720ad2, #950de5);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgb(28, 0, 48), inset 0 2px 4px rgba(46, 1, 86, 0.763);
+   
+    font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+    
+  }
+  
+  /* Add hover effect for a more interactive look */
+  .explore-btn:hover {
+    background: linear-gradient(135deg, #5a0bb5, #8a2be2, #c080ff);
+    box-shadow: 0 6px 15px rgba(106, 13, 173, 0.6), inset 0 3px 6px rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+  }
+  
+  /* Active effect for click interaction */
+  .explore-btn:active {
+    transform: scale(0.98);
+    box-shadow: 0 3px 8px rgba(106, 13, 173, 0.5);
+  }
+  
 
-.explore-btn:hover {
-  background: linear-gradient(135deg, #5a0bb5, #8a2be2, #c080ff);
-  transform: scale(1.05);
-}
+
 
 .home-image img {
   max-width: 90%;
@@ -75,7 +97,6 @@ body,html {
   background: white;
 }
 
-/* Search Filter */
 .search-filter {
   display: flex;
   justify-content: center;
@@ -90,19 +111,13 @@ body,html {
   border-radius: 5px;
 }
 
-/* EVENT GRID - VERTICAL ORDER */
 .event-grid {
-  display: flex;
-  flex-direction: column; /* Stacks items vertically */
-  align-items: center; /* Centers them properly */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
-  padding: 20px;
 }
 
-/* Event Cards */
 .event-card {
-  width: 80%;
-  max-width: 400px;
   background: white;
   border-radius: 10px;
   padding: 15px;
