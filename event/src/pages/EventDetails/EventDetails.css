@@ -1,0 +1,102 @@
+/* Ensure Full Screen without Overlapping Navbar */
+.event-details-container {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 80px; /* Adjust according to Navbar height */
+  background-color: #d6c3e3;
+}
+
+/* Wrapper for content */
+.event-details-wrapper {
+  padding: 40px 80px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Flexbox for proper alignment */
+.event-details-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 900px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Styling */
+.event-img {
+  width: 50%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Information Container */
+.event-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.event-info h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: rgb(61, 61, 61);
+  font-weight: 600;
+}
+
+/* Small details like date & location */
+.small-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+/* Description */
+.description-heading {
+  font-size: 20px;
+  color: var(--primary-color);
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.description-heading-para {
+  font-size: 16px;
+}
+
+/* Button */
+.get-ticket-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #6a0dad;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.get-ticket-btn:hover {
+  background: #540b9d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .event-details-content {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .event-img {
+      width: 100%;
+      height: 250px;
+  }
+
+  .event-info {
+      width: 100%;
+  }
+}

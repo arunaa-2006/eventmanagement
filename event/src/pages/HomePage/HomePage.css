@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&family=Spicy+Rice&display=swap');
+
+body,html {
+    background: url('/assets/background.jpg') no-repeat center center/cover;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  background-color: #f8f8f8;
+}
+
+/* Hero Section */
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  min-height: 100vh;
+  background: url('/assets/kl.jpg') no-repeat center center/cover;
+  color: #01062a;
+  text-align: left;
+}
+
+.home-text {
+  max-width: 50%;
+}
+
+#tit1, #tit2 {
+  font-family: "Rampart One", serif;
+  font-weight: 400;
+}
+
+#tit1 {
+  font-size: 5rem;
+}
+
+#tit2 {
+  font-size: 4rem;
+}
+
+.home-text p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.explore-btn {
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: larger;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #3d0367, #720ad2, #950de5);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgb(28, 0, 48), inset 0 2px 4px rgba(46, 1, 86, 0.763);
+}
+
+.explore-btn:hover {
+  background: linear-gradient(135deg, #5a0bb5, #8a2be2, #c080ff);
+  transform: scale(1.05);
+}
+
+.home-image img {
+  max-width: 90%;
+  margin-left: 30%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Event List Section */
+.event-list-container {
+  padding: 50px 20px;
+  background: white;
+}
+
+/* Search Filter */
+.search-filter {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-box, .category-dropdown {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* EVENT GRID - VERTICAL ORDER */
+.event-grid {
+  display: flex;
+  flex-direction: column; /* Stacks items vertically */
+  align-items: center; /* Centers them properly */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Event Cards */
+.event-card {
+  width: 80%;
+  max-width: 400px;
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.event-card:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-text {
+    max-width: 100%;
+  }
+
+  .home-image img {
+    width: 100%;
+  }
+
+  .search-filter {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-box, .category-dropdown {
+    width: 90%;
+  }
+}

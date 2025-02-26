@@ -1,0 +1,168 @@
+/* General Styling */
+.payment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #e6d6f2; /* Light purple background */
+  padding: 20px;
+}
+
+/* Flexbox Layout */
+.payment-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  background: #f2e6ff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 900px;
+}
+
+/* Left Section (Event Details) */
+.left-section {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.left-section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4a148c;
+  margin-bottom: 10px;
+}
+
+.left-section h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #6a1b9a;
+}
+
+.event-image {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* Right Section (Payment Form) */
+.right-section {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pay-link-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #4a148c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.divider {
+  text-align: center;
+  font-size: 14px;
+  margin: 10px 0;
+  color: #555;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, select {
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 16px;
+  box-sizing: border-box;
+  height: 45px;
+}
+
+/* Dropdown Alignment Fix */
+select {
+  appearance: none; /* Removes default browser styling */
+  background-color: white;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+/* Card Info Input Fields */
+.card-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-info input {
+  flex: 1;
+  text-align: center;
+}
+
+/* Checkbox Alignment */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.checkbox-container input {
+  width: 16px;
+  height: 16px;
+  accent-color: #4a148c; /* Purple checkbox */
+}
+
+.checkbox-container label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Pay Button */
+.pay-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #4a148c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.pay-button:hover {
+  background: #6a1b9a;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .payment-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-section, .right-section {
+    width: 100%;
+    text-align: center;
+  }
+
+  .card-info {
+    flex-direction: column;
+  }
+}

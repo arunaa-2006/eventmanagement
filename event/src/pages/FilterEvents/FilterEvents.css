@@ -1,0 +1,125 @@
+/* 🌟 General Styling */
+.find-events-wrapper {
+  background-color: #f3ecff00; /* Light purple for a soft look */
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 20px;
+}
+
+/* 🎨 Filter Box - Clean & Minimal */
+.filter-box {
+  width: 100%;
+  max-width: 700px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  transition: 0.3s ease-in-out;
+}
+
+.filter-box:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* 🏷️ Dropdown & Input Fields */
+.filter-box select,
+.filter-box input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #d1c4e9; /* Soft purple border */
+  border-radius: 8px;
+  outline: none;
+  background: #fcfcff;
+  transition: 0.3s ease-in-out;
+}
+
+.filter-box select:focus,
+.filter-box input:focus {
+  border-color: #7b1fa2; /* Deep purple on focus */
+  box-shadow: 0 0 8px rgba(123, 31, 162, 0.2);
+}
+
+/* 📅 Search Event List */
+.search-event-list {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* 📌 Event Card */
+.event-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.event-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* 🎯 Buttons */
+.filter-button {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(45deg, #7b1fa2, #6a1b9a);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.filter-button:hover {
+  background: linear-gradient(45deg, #6a1b9a, #4a148c);
+}
+
+/* 📱 Responsive Design */
+@media screen and (max-width: 768px) {
+  .find-events-wrapper {
+    padding: 80px 15px;
+  }
+
+  .filter-box,
+  .search-event-list {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .find-events-wrapper {
+    padding-top: 60px;
+  }
+
+  .filter-box {
+    padding: 15px;
+  }
+
+  .filter-box select,
+  .filter-box input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .filter-button {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}

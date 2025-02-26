@@ -1,0 +1,146 @@
+/* Apply background only to the login page */
+.login-page {
+  background-image: url('../../assets/background.jpg'); /* Ensure correct path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Sign In Container */
+.login-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Title */
+.login-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #6a0dad;
+  margin-bottom: 10px;
+}
+
+/* Subtitle */
+.login-container p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Social Login Buttons */
+.social-login {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+.social-login button {
+  background: none;
+  border: 1px solid #6a0dad;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-login button:hover {
+  background: #6a0dad;
+  color: white;
+}
+
+/* Horizontal Line */
+hr {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin: 15px 0;
+}
+
+/* Input Group */
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Single Input Fields */
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+/* Sign In Button */
+.login-button {
+  width: 100%;
+  background-color: #6a0dad;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.login-button:hover {
+  background-color: #5a0bb5;
+}
+
+/* Log in Link */
+.login-container p strong {
+  color: #6a0dad;
+  cursor: pointer;
+}
+
+.login-container p strong:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .login-container {
+    width: 90%;
+  }
+  
+  .input-group {
+    flex-direction: column;
+  }
+}
+
+.login-link {
+  color: #4b0082;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.login-link:hover {
+  color: #6a0dad;
+}
