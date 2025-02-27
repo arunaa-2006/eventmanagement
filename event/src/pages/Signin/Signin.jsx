@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./SignIn.css";
+import "./Signin.css";
 import Navigation from "../../components/Navigation/Navigation";
 
 const SignIn = () => {
